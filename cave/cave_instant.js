@@ -12,7 +12,7 @@ var wallLimit = 4;
 var wallThickness = 3;
 var cavyness = 0.01;
 var smoothness = 15;
-var fps = 25;
+var fps = 60;
 var count = 0;
 
 function setup() {
@@ -40,8 +40,8 @@ function setup() {
         createRooms();
         randomizeMaze();
     }
-    prob = 0.95;
-    createRooms();
+    wallLimit = 3;
+    prob = 1;
     createRooms();
 
 

@@ -103,8 +103,9 @@ function draw() {
         count += 1;
     } else if (!cleanup) {
         prob = 1;
-        createRooms();
+        wallLimit = 3;
         frameRate(1);
+        createRooms();
         cleanup = true;
     } else {
         frameRate(fps);
